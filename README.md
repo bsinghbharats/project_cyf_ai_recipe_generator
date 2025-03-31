@@ -45,7 +45,7 @@ Installation
    - Graphviz (for visualization)
 
 2. Clone repo:
-   git clone https://github.com/yourusername/ai-recipe-generator.git
+   git clone [https://github.com/yourusername/ai-recipe-generator.git](https://github.com/bsinghbharats/project_cyf_ai_recipe_generator.git)
    cd ai-recipe-generator
 
 3. Setup environment:
