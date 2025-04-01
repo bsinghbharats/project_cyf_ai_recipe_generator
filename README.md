@@ -43,6 +43,7 @@ Installation
    - Python 3.8+
    - Git
    - Graphviz (for visualization)
+   - Dataset: Link https://drive.google.com/drive/folders/17jmcYEnRsG5duCnAgGx7ZR4TokorB7Ei?usp=drive_link
 
 2. Clone repo:
    git clone [https://github.com/bsinghbharats/project_cyf_ai-recipe-generator.git](https://github.com/bsinghbharats/project_cyf_ai_recipe_generator.git)
