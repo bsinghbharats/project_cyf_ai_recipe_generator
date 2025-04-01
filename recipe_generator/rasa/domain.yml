@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents:
+  - greet
+  - request_recipe
+  - provide_ingredients
+  - request_variation
+
+entities:
+  - ingredient
+  - dietary_restriction
+
+slots:
+  available_ingredients:
+    type: list
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: ingredient
+  dietary_restrictions:
+    type: list
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: dietary_restriction
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm your recipe assistant. What would you like to cook today?"
+  utter_ask_ingredients:
+    - text: "What ingredients do you have available?"
+  utter_ask_dietary_restrictions:
+    - text: "Do you have any dietary restrictions I should know about?"
+  utter_no_recipe:
+    - text: "I couldn't find a recipe matching your requirements. Maybe try different ingredients?"
+  utter_goodbye:
+    - text: "Goodbye! Happy cooking!"
+
+actions:
+  - action_generate_recipe
+  - action_suggest_variation

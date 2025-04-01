@@ -1,0 +1,28 @@
+version: "3.1"
+
+nlu:
+  - intent: request_recipe
+    examples: |
+      - I want to cook something
+      - Suggest me a recipe
+      - What can I make with [potatoes](ingredient)
+      - I have [potatoes](ingredient) and [cheese](ingredient), what can I make?
+      - Give me a [vegetarian](dietary_restriction) recipe
+      - I need a [vegan](dietary_restriction) dish with [tomatoes](ingredient)
+      - [Gluten-free](dietary_restriction) recipe please
+      - Make something with [chicken](ingredient) and [rice](ingredient)
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+      - Good morning
+      - What's up?
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - Goodbye
+      - See you later
+      - Take care
+

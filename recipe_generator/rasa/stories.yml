@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+  - story: vegetarian recipe request
+    steps:
+      - intent: request_recipe
+        entities:
+          - dietary_restriction: vegetarian
+          - ingredient: potatoes
+      - action: action_generate_recipe
+
+  - story: generic recipe request
+    steps:
+      - intent: request_recipe
+      - action: utter_ask_ingredients
+      - intent: provide_ingredients
+        entities:
+          - ingredient
+      - action: utter_ask_dietary_restrictions
+      - intent: provide_dietary_restrictions
+        entities:
+          - dietary_restriction
+      - action: action_generate_recipe

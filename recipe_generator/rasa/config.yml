@@ -1,0 +1,24 @@
+recipe: default.v1
+
+pipeline:
+  - name: SpacyNLP
+    model: "en_core_web_sm"
+  - name: SpacyTokenizer
+  - name: SpacyEntityExtractor
+  - name: CRFEntityExtractor
+  - name: EntitySynonymMapper
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true # Fixes the warning
+  - name: ResponseSelector
+    epochs: 100
+
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: RulePolicy
+assistant_id: 20250331-182305-brutal-barrel
+language: en
