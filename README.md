@@ -45,7 +45,7 @@ Installation
    - Graphviz (for visualization)
 
 2. Clone repo:
-   git clone [https://github.com/yourusername/ai-recipe-generator.git](https://github.com/bsinghbharats/project_cyf_ai_recipe_generator.git)
+   git clone [https://github.com/bsinghbharats/project_cyf_ai-recipe-generator.git](https://github.com/bsinghbharats/project_cyf_ai_recipe_generator.git)
    cd ai-recipe-generator
 
 3. Setup environment:
@@ -67,7 +67,7 @@ Option 1: Command Line Chat
    rasa shell
 
 Try queries:
-- "I need a vegan recipe with tofu"
+- "I need a vegetarian recipe with Potato"
 - "What can I make with chicken and rice?"
 
 Option 2: Flask API
